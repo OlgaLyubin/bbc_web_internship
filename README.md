@@ -10,4 +10,6 @@ author: Olha Lyubinets
 ### To run the project call:
 
 npm install
+
+
 npm start
