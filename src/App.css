@@ -1,33 +1,142 @@
-.App {
+.article_img {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  margin-bottom: 12px;
+}
+
+/*  Styling for different screen sizes (tablet, mobile)   */
+@media only screen and (max-width: 700px) {
+  .article_img {
+    width: 90% !important;
+    height: 180px;
+  }
+  .article {
+    width: 90% !important;
+  }
+  .starIcon {
+    width: 40px !important;
+    height: 40px !important;
+    padding: 5px;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+  .article_img {
+    width: 90% !important;
+    height: 350px;
+  }
+  .article {
+    width: 90% !important;
+  }
+}
+
+.article {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.buttons {
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.prevNextButton,
+.rankingButton,
+.submitRanking {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  border-radius: 5px;
+  border: 0px;
+  width: 110px;
+  height: 35px;
+  margin: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.prevNextButton {
+  background-color: rgb(103, 47, 124);
 }
 
-.App-link {
-  color: #61dafb;
+.prevNextButton:hover {
+  background-color: rgb(72, 34, 86);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rankingButton:focus {
+  outline: 0;
+}
+
+.rankingButton:hover {
+  background-color: rgb(102, 14, 60);
+}
+
+.prevNextButton:focus {
+  outline: 0;
+}
+
+.rankingButton {
+  background-color: rgb(135, 18, 80);
+}
+
+.articleName {
+  color: rgb(103, 47, 124);
+  text-align: center;
+}
+
+/*  Ranking & Stars components:  */
+
+.starIcon {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+
+.title {
+  text-align: center;
+  font-weight: 300;
+}
+
+.rankingContainer {
+  text-align: center;
+}
+
+.setOfStars {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.submitRanking {
+  background-color: rgb(34, 46, 127);
+  width: 170px;
+  margin-top: 20px;
+}
+
+.submitRanking:hover {
+  background-color: rgb(24, 32, 89);
+}
+
+.submitRanking :focus {
+  outline: 0;
+}
+
+.submitRanking:disabled {
+  opacity: 0.6;
+}
+
+.submitRanking[disabled] {
+  opacity: 0.6 !important;
+}
+
+.success {
+  color: rgb(26, 132, 51);
+}
+
+.error {
+  color: rgb(183, 22, 38);
 }
